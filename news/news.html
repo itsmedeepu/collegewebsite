@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<style>
+.vticker{width: 100%;}
+.vticker ul{padding: 0;}
+.vticker li{list-style: none;padding: 6px 10px; border-bottom: 1px solid white;}
+.et-run{background: red;}
+.vticker ul a {text-decoration: navajowhite;font-size: 14px;color: #333;}
+.cal1 {float: left;display: block;background: #E6E6E6;text-align: center;width: 45px;font-weight: bold;padding: 3px 0 0 0;margin: 0px 0px 0 0px;}
+.cal1 span {color: #E6E6E6;font-size: 11px;padding: 1px 8px;font-weight: bold;margin-top: 3px;display: block;}
+.events1 p {padding: 0 0 5px 56px; color:#fff;   font: 8px verdana;  font-size: 13px;margin: 0;}
+.font11 {font-size: 11px !important;color: #828282 !important;}
+</style>
+</head>
+<body>
+  <div class="vticker">
+    <ul>
+	<li>
+    <a href="#" target="_blank">
+				  <div class="events1">
+					<div class="cal1" style="color:#B60055;">
+					  15<br/>
+					  <span style="background:#B60055">Aug</span>
+					</div>
+					<p>Your annoc</p>
+					<p class="font11"><p>Many Patriotic and cultural programs were presented by our school students.</p></p>
+					<div class="clear"></div>
+				  </div>
+				</a>
+      </li>
+      <li>
+    <a href="#" target="_blank">
+          <div class="events1">
+          <div class="cal1" style="color:#B60055;">
+            15<br/>
+            <span style="background:#B60055">Aug</span>
+          </div>
+          <p>Your annoc</p>
+          <p class="font11"><p>Many Patriotic and cultural programs were presented by our school students.</p></p>
+          <div class="clear"></div>
+          </div>
+        </a>
+      </li>
+      <li>
+    <a href="#" target="_blank">
+          <div class="events1">
+          <div class="cal1" style="color:#B60055;">
+            15<br/>
+            <span style="background:#B60055">Aug</span>
+          </div>
+          <p>Your annoc</p>
+          <p class="font11"><p>Many Patriotic and cultural programs were presented by our school students.</p></p>
+          <div class="clear"></div>
+          </div>
+        </a>
+      </li>
+      
+          </ul>
+        </div>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
+<script>
+    $(document).ready(function(){
+  var dd = $('.vticker').easyTicker({
+          direction: 'up',
+          easing: 'easeInOutBack',
+          speed: 'slow',
+          interval: 3000,
+          height: 'auto',
+          visible: 4,
+          mousePause: 0,
+          // controls: {index
+          //     up: '.up',
+          //     down: '.down',
+          //     toggle: '.toggle',
+          //     stopText: 'Stop !!!'
+          // }
+      }).data('easyTicker');
+
+      cc = 1;
+      $('.vis').click(function(){
+          dd.options['visible'] = 6;
+
+      });
+
+      $('.visall').click(function(){
+          dd.stop();
+          dd.options['visible'] = 0 ;
+          dd.start();
+      });
+
+  });
+    </script>
+</body>
+</html>
